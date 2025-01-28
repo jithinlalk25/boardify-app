@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "boardify-app",
-    "slug": "boardify-app",
+    "name": "boardify",
+    "slug": "boardify",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -23,6 +23,16 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "node_modules/react-native-vector-icons/MaterialCommunityIcons.ttf"
+          ]
+        }
+      ]
+    ]
   }
 }
