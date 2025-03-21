@@ -9,7 +9,7 @@ interface LoginVerifyResponse {
   token: string;
 }
 
-const BASE_URL = "http://192.168.1.5:3000";
+const BASE_URL = "http://192.168.1.7:3000";
 
 export interface UserProfile {
   _id: string;
@@ -81,6 +81,21 @@ export const api = {
         Authorization: `Bearer ${token}`,
       },
     });
+    return response.data;
+  },
+
+  registerPushToken: async (expoPushToken: string) => {
+    const token = await tokenStorage.getToken();
+    const response = await axios.post(
+      `${BASE_URL}/member-app/push-token`,
+      { expoPushToken },
+      {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
     return response.data;
   },
 };

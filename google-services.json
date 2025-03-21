@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "555474878074",
+    "project_id": "boardify-1d899",
+    "storage_bucket": "boardify-1d899.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555474878074:android:bbc68abd345d9c09d2c5c3",
+        "android_client_info": {
+          "package_name": "com.androjlk.boardify.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM8lzGAHGD-bZNh7jwyB3ESi6sGHoD_qk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
